@@ -1,3 +1,5 @@
+from utilities import is_even
+
 FIRST_ROW = 0
 SECOND_ROW = 1
 THIRD_ROW = 2
@@ -31,10 +33,6 @@ def hydrate(threshold):
 
     if water_level < threshold:
         use_item(Items.Water)
-
-
-def is_even(number):
-    return number % 2 == 0
 
 
 while True:
