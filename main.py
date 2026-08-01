@@ -1,4 +1,4 @@
-from constants import *
+from constants import HAY_ROWS, PUMPKIN_COLUMNS, VEGETABLE_ROWS, WOOD_ROWS, WORLD_SIZE
 from helpers import do_haverst, hydrate
 from utilities import is_even
 
@@ -21,12 +21,12 @@ while True:
                 plant(Entities.Carrot)
 
         # hay
-        if (current_row == ROWS['third']) or (current_row == ROWS['fourth']):
+        if current_row in HAY_ROWS:
             do_haverst()
             plant(Entities.Grass)
 
         # wood
-        if (current_row == ROWS['fifth']) or (current_row == ROWS['sixth']):
+        if current_row in WOOD_ROWS:
             do_haverst()
 
             if is_even(get_pos_x()):
