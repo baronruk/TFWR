@@ -11,18 +11,26 @@ ROWS = {
     'tenth': 9,
     'eleventh': 10,
     'twelfth': 11,
+    'thirteenth': 12,
+    'fourteenth': 13,
+    'fifteenth': 14,
+    'sixteenth': 15,
 }
 HAY_ROWS = [
     ROWS['third'],
     ROWS['fourth'],
     ROWS['ninth'],
     ROWS['tenth'],
+    ROWS['fifteenth'],
+    ROWS['sixteenth'],
 ]
 VEGETABLE_ROWS = [
     ROWS['first'],
     ROWS['second'],
     ROWS['seventh'],
     ROWS['eighth'],
+    ROWS['thirteenth'],
+    ROWS['fourteenth'],
 ]
 WOOD_ROWS = [
     ROWS['fifth'],
@@ -35,5 +43,9 @@ PUMPKIN_COLUMNS = [
     1,
     4,
     5,
+    8,
+    9,
+    12,
+    13,
 ]
 WORLD_SIZE = get_world_size()

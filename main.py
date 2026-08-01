@@ -32,7 +32,7 @@ while True:
             if is_even(get_pos_x()):
                 plant(Entities.Bush)
             else:
-                hydrate(0.75)
+                # hydrate(0.75)
                 plant(Entities.Tree)
 
         if current_row == (WORLD_SIZE - 1):
