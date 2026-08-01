@@ -1,3 +1,4 @@
+from helpers import do_haverst, hydrate
 from utilities import is_even
 
 FIRST_ROW = 0
@@ -21,19 +22,6 @@ PUMPKIN_COLUMNS = [
     5,
 ]
 WORLD_SIZE = get_world_size()
-
-
-def do_haverst():
-    if can_harvest():
-        harvest()
-
-
-def hydrate(threshold):
-    water_level = get_water()
-
-    if water_level < threshold:
-        use_item(Items.Water)
-
 
 while True:
     # pet_the_piggy()
