@@ -1,19 +1,21 @@
 from helpers import do_haverst, hydrate
 from utilities import is_even
 
-FIRST_ROW = 0
-SECOND_ROW = 1
-THIRD_ROW = 2
-FOURTH_ROW = 3
-FIFTH_ROW = 4
-SIXTH_ROW = 5
-SEVENTH_ROW = 6
-EIGHTH_ROW = 7
+ROWS = {
+    'first': 0,
+    'second': 1,
+    'third': 2,
+    'fourth': 3,
+    'fifth': 4,
+    'sixth': 5,
+    'seventh': 6,
+    'eighth': 7,
+}
 VEGETABLE_ROWS = [
-    FIRST_ROW,
-    SECOND_ROW,
-    SEVENTH_ROW,
-    EIGHTH_ROW,
+    ROWS['first'],
+    ROWS['second'],
+    ROWS['seventh'],
+    ROWS['eighth'],
 ]
 PUMPKIN_COLUMNS = [
     0,
@@ -42,12 +44,12 @@ while True:
                 plant(Entities.Carrot)
 
         # hay
-        if (current_row == THIRD_ROW) or (current_row == FOURTH_ROW):
+        if (current_row == ROWS['third']) or (current_row == ROWS['fourth']):
             do_haverst()
             plant(Entities.Grass)
 
         # wood
-        if (current_row == FIFTH_ROW) or (current_row == SIXTH_ROW):
+        if (current_row == ROWS['fifth']) or (current_row == ROWS['sixth']):
             do_haverst()
 
             if is_even(get_pos_x()):
