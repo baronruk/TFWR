@@ -7,10 +7,16 @@ ROWS = {
     'sixth': 5,
     'seventh': 6,
     'eighth': 7,
+    'ninth': 8,
+    'tenth': 9,
+    'eleventh': 10,
+    'twelfth': 11,
 }
 HAY_ROWS = [
     ROWS['third'],
     ROWS['fourth'],
+    ROWS['ninth'],
+    ROWS['tenth'],
 ]
 VEGETABLE_ROWS = [
     ROWS['first'],
@@ -21,6 +27,8 @@ VEGETABLE_ROWS = [
 WOOD_ROWS = [
     ROWS['fifth'],
     ROWS['sixth'],
+    ROWS['eleventh'],
+    ROWS['twelfth'],
 ]
 PUMPKIN_COLUMNS = [
     0,
