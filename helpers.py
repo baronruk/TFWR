@@ -1,4 +1,4 @@
-def do_haverst():
+def do_harvest():
     if can_harvest():
         harvest()
 
