@@ -1,6 +1,7 @@
-from mixed import farm_mixed
+from cactus import farm_cactus
+
+# from mixed import farm_mixed
 
 while True:
-    # pet_the_piggy()
-
-    farm_mixed()
+    farm_cactus()
+    # farm_mixed()
