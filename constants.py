@@ -49,3 +49,4 @@ PUMPKIN_COLUMNS = [
     13,
 ]
 WORLD_SIZE = get_world_size()
+WORLD_GRID_AREA = WORLD_SIZE * WORLD_SIZE

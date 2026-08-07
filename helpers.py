@@ -7,11 +7,15 @@ def get_coords():
     return get_pos_x(), get_pos_y()
 
 
-def hydrate(threshold):
-    water_level = get_water()
+def hydrate(threshold, force=False):
+    if force:
+        while get_water() < threshold:
+            use_item(Items.Water)
+    else:
+        water_level = get_water()
 
-    if water_level < threshold:
-        use_item(Items.Water)
+        if water_level < threshold:
+            use_item(Items.Water)
 
 
 def reverse(direction):
