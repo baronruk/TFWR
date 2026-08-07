@@ -18,6 +18,16 @@ def hydrate(threshold, force=False):
             use_item(Items.Water)
 
 
+def reset_position():
+    x, y = get_coords()
+    while x != 0 or y != 0:
+        if x != 0:
+            move(West)
+        if y != 0:
+            move(South)
+        x, y = get_coords()
+
+
 def reverse(direction):
     if direction == West:
         return East

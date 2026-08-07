@@ -1,5 +1,5 @@
 from constants import WORLD_SIZE
-from helpers import get_coords, reverse
+from helpers import get_coords, reset_position, reverse
 
 
 def plant_cactus():
