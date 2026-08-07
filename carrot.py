@@ -1,10 +1,9 @@
 from constants import WORLD_SIZE
-from helpers import do_harvest, reset_position, reverse
+from helpers import cultivate, do_harvest, reset_position, reverse
 
 
 def plant_carrot():
-    if get_ground_type() == Grounds.Grassland:
-        till()
+    cultivate()
     plant(Entities.Carrot)
 
 

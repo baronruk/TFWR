@@ -1,10 +1,9 @@
 from constants import WORLD_SIZE
-from helpers import get_coords, reset_position, reverse
+from helpers import cultivate, get_coords, reverse
 
 
 def plant_cactus():
-    if get_ground_type() == Grounds.Grassland:
-        till()
+    cultivate()
     plant(Entities.Cactus)
 
 

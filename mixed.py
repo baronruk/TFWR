@@ -1,5 +1,5 @@
 from constants import HAY_ROWS, PUMPKIN_COLUMNS, VEGETABLE_ROWS, WOOD_ROWS, WORLD_SIZE
-from helpers import do_harvest, hydrate
+from helpers import cultivate, do_harvest, hydrate
 from utilities import is_even
 
 
@@ -11,8 +11,7 @@ def farm_mixed():
         # carrots/pumkings
         if current_row in VEGETABLE_ROWS:
             do_harvest()
-            if get_ground_type() == Grounds.Grassland:
-                till()
+            cultivate()
             if current_column in PUMPKIN_COLUMNS:
                 hydrate(0.5)
                 plant(Entities.Pumpkin)

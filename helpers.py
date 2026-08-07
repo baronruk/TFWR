@@ -1,3 +1,8 @@
+def cultivate():
+    if get_ground_type() == Grounds.Grassland:
+        till()
+
+
 def do_harvest():
     if can_harvest():
         harvest()

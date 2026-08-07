@@ -1,10 +1,9 @@
 from constants import WORLD_GRID_AREA, WORLD_SIZE
-from helpers import do_harvest, hydrate, reverse
+from helpers import cultivate, do_harvest, hydrate, reverse
 
 
 def plant_healthy_pumpkin():
-    if get_ground_type() == Grounds.Grassland:
-        till()
+    cultivate()
 
     # measure
     # returns a mysterious number Entities.Pumpkin
